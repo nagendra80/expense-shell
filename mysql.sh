@@ -45,7 +45,7 @@ VALIDATE $? "Starting MySQL Server"
 
 mysql -h mysql.pa1.online -u root -pExpenseApp@1 -e 'show databases;' &>>$LOG_FILE_NAME
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
 
     echo "MySQL Root Passsword not setup" &>>$LOG_FILE_NAME
